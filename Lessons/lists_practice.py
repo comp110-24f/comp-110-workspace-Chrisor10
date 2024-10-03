@@ -5,7 +5,7 @@ my_numbers: list[float] = list()  # constructor
 
 print(my_numbers)  # printing empty list
 my_numbers.append(1.5)  # adding to the list
-my_numbers.append(2.5)
+my_numbers.append(1.5)
 print(my_numbers)
 
 # create an already populated lists
