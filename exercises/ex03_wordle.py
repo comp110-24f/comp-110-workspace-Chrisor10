@@ -58,7 +58,7 @@ def main(secret: str) -> None:
         print(f" === Turn {current_turn}/{num_turns} === ")
         user_guess: str = input(f"Enter a {len(secret)} character word: ")
         if len(user_guess) < len(secret):
-            print(f"That wasn't {len(secret)} chars! Try again:")
+            user_guess: str = input(f"That wasn't {len(secret)} chars! Try again:")
         print(emojified(user_guess, secret))
         if user_guess == secret:
             won_game = True
